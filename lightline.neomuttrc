@@ -92,7 +92,7 @@ set compose_format = "\
  %l \
 "
 
-# Text is black on black unless stated otherwise; this hides control characters
+# Default black on black in statusline; this hides control characters
 color status                  black   black
 
 color status                  black   color1  '(.*?)' 1      # INDEX, PAGER
@@ -103,13 +103,22 @@ color status                  color6  black   '\| \+ '
 color status                  white   black   '(.*?)' 1
 color status                  black   color4  '( \S+.)' 1
 color status                  black   color1  '\s\S+.$'
+
 color sidebar_highlight       black   white
 color sidebar_unread    bold  white   default
 color sidebar_spoolfile       color3  default
 color sidebar_new             color3  default
 color sidebar_ordinary        color3  default
 color sidebar_flagged         color3  default
-color index             bold  white   default "~N"            # Unread = bold
-color index_author      bold  white   default "~N"            # Unread = bold
-color index_subject     bold  white   default "~N"            # Unread = bold
+
+color index                   color3 default  '.*'
+color index_author      bold  color5 default '.*'
+color index_subject     bold  color6 default '.*'
+color index_flags             color6 default '~F'
+color index_label             default default
+color index_date              color4 default
+color index_tags              color6 default
+color index             bold  white   default "~N"            # Unread
+color index_author      bold  white   default "~N"            # Unread
+color index_subject     bold  white   default "~N"            # Unread
 uncolor sidebar_divider
