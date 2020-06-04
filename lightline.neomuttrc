@@ -42,7 +42,7 @@ set vfolder_format = " %N %?n?%3n&   ?  %8m  · %f"
 
 set attach_format = "%T%-65.65d %> %m/%M (%s)"
 
-set index_format = " %D %S  %T  %-35.35L %?X?& ? %s %> "
+set index_format = "%D %S  %T  %-35.35L %?X?& ? %s %> "
 
 set folder_format = "%2C %t %N %F %2l %-8.8u %-8.8g %8s %d %i"
 
@@ -72,9 +72,9 @@ set pager_format= "\
 %?X? ?\
 %s \
 %* \
-\
+ \
+%T \
 \
-%T  \
 %n\
 \
  %P \
@@ -101,6 +101,7 @@ color status                  color3  black   'Help for.*?%)' # Help status
 color status                  color6  black   '(.*?)' 1
 color status                  color6  black   '\| \+ '
 color status                  white   black   '(.*?)' 1
+color status                  white   black   ' (.*?)' 1
 color status                  black   color4  '( \S+.)' 1
 color status                  black   color1  '\s\S+.$'
 
@@ -118,7 +119,7 @@ color index_flags             color6 default '~F'
 color index_label             default default
 color index_date              color4 default
 color index_tags              color6 default
-color index             bold  white   default "~N"            # Unread
-color index_author      bold  white   default "~N"            # Unread
-color index_subject     bold  white   default "~N"            # Unread
+color index                   white  default "~N"            # Unread
+color index_author      bold  white  default "~N"            # Unread
+color index_subject     bold  white  default "~N"            # Unread
 uncolor sidebar_divider
