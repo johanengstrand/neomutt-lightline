@@ -96,7 +96,7 @@ set compose_format = "\
 color status                  black   black
 
 color status                  black   color1  '(.*?)' 1      # INDEX, PAGER
-color status                  black   color10  '(.*?)' 1     # COMPOSE
+color status                  black   color2  '(.*?)' 1      # COMPOSE
 color status                  color3  black   'Help for.*?%)' # Help status
 color status                  color6  black   '(.*?)' 1
 color status                  color6  black   '\| \+ '
