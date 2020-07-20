@@ -42,7 +42,7 @@ set vfolder_format = " %N %?n?%3n&   ?  %8m  · %f"
 
 set attach_format = "%T%-65.65d %> %m/%M (%s)"
 
-set date_format = "%d %b %I:%M"
+set date_format = "%d %b %H:%M"
 
 set index_format = "%D %S  %T  %-35.35L %?X?& ? %s %> "
 
