@@ -8,7 +8,7 @@ set to_chars="  "
 
 # mail is tagged, important, deletion, attachments marked for deletion, \
 # been replied to, old, new, thread old, thread new, %S expando, %Z expando
-set flag_chars = "     "
+set flag_chars = "    "
 
 # unchanged mailbox, changed, read only, attach mode
 set status_chars = " +"
@@ -44,7 +44,8 @@ set attach_format = "%T%-65.65d %> %m/%M (%s)"
 
 set date_format = "%d %b %H:%M"
 
-set index_format = "%D %S  %T  %-35.35L %?X?& ? %s %> "
+# set index_format = "%D %S  %T  %-35.35L %?X?& ? %s %> "
+set index_format = "%D %S %-35.35L %?X?& ? %s %> "
 
 set folder_format = "%2C %t %N %F %2l %-8.8u %-8.8g %8s %d %i"
 
